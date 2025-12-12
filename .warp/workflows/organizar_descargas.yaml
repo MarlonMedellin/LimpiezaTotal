@@ -1,0 +1,13 @@
+name: LimpiezaTotal - Organizar Descargas
+command: powershell -File scripts/organizar.ps1 -CarpetaObjetivo {{carpeta}} -Modo {{modo}}
+tags:
+  - limpieza
+  - organizar
+description: Organiza archivos en carpetas por Fecha (dd-mm-aaaa) o Extension.
+arguments:
+  - name: carpeta
+    description: Carpeta a organizar (ej. C:\Users\TuUsuario\Downloads)
+    default_value: .
+  - name: modo
+    description: Modo de organizacion (Fecha o Extension)
+    default_value: Fecha

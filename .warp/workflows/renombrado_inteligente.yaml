@@ -1,0 +1,11 @@
+name: LimpiezaTotal - Renombrado Inteligente
+command: powershell -File scripts/analizar-contenido.ps1 -CarpetaObjetivo {{carpeta}} -RenombradoInteligente
+tags:
+  - limpieza
+  - renombrar
+  - ia
+description: Renombra archivos leyendo su contenido (ej. PDFs) para darles nombres descriptivos.
+arguments:
+  - name: carpeta
+    description: Carpeta a analizar
+    default_value: .

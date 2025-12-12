@@ -1,0 +1,11 @@
+name: LimpiezaTotal - Limpiar Basura
+command: powershell -File scripts/generar-lista-limpieza.ps1 -CarpetaObjetivo {{carpeta}}
+tags:
+  - limpieza
+  - borrar
+  - mantenimiento
+description: Escanea y genera una lista de archivos basura (tmp, log, instaladores viejos) para borrar.
+arguments:
+  - name: carpeta
+    description: Carpeta a limpiar
+    default_value: .
