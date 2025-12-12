@@ -1,11 +1,12 @@
 #Requires -Version 5.1
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 param (
     [Parameter(Mandatory = $true)] [string]$CarpetaObjetivo,
     [ValidateSet("Fecha", "Extension")] [string]$Modo = "Fecha",
     [switch]$Simulacion # DryRun
 )
+
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 Write-Host "Organizando carpeta: $CarpetaObjetivo (Modo: $Modo)" -ForegroundColor Cyan
 

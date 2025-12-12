@@ -1,11 +1,12 @@
 #Requires -Version 5.1
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 param (
     [Parameter(Mandatory = $true)] [string]$CarpetaObjetivo,
     [switch]$RenombradoInteligente,
     [switch]$Simulacion # DryRun
 )
+
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 Write-Host "Iniciando analisis de contenido en: $CarpetaObjetivo" -ForegroundColor Cyan
 

@@ -1,9 +1,10 @@
 #Requires -Version 5.1
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 param (
     [Parameter(Mandatory = $true)] [string]$CarpetaObjetivo
 )
+
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 Write-Host "Analizando estructura sugerida para: $CarpetaObjetivo" -ForegroundColor Cyan
 
